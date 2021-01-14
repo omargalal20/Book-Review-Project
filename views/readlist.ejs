@@ -38,5 +38,11 @@
             </form>
         </div>
     </nav>
-</body>
+    <% for (book in books) {%>
+        div style="display: inline-block; width: 24%;">
+        <img src="<%=books[book][1]%>.jpg" style = "height: 300px; margin-left: 20px; ">
+        <a href="/<%=books[book][1]%>"><p style ="color: white; margin-left: 30px;"> <%=books[book][0]%></p></a>
+    </div>
+    <% }%>
+    </body>
 </html>

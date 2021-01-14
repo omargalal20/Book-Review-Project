@@ -77,12 +77,17 @@
         From Rupi Kaur, the #1 New York Times bestselling author of milk and honey, comes her long-awaited second collection of poetry. A vibrant and transcendent journey about growth and healing. Ancestry and honoring one’s roots. Expatriation and rising up to find a home within yourself.
     </div>
     <div class="readlist">
+        <form method="Post" action="/addtoreadlist">
+                <div style="visibility: hidden;">
+                <input type="text" name="title" value="The Sun and Her Flowers">
+                <input type="text" name="file" value="sun">
+                </div>
         <button id="readlist" class="btn btn-secondary ml-3">Add to Want to Read List</button>
+        <p style="color: white"><%=error%></p>
+        </form>
     </div>
     <div class="video">
-        <video width="480" height="360" controls>
-            <source src="/sun.mp4">
-        </video>
+        <iframe width="480" height="360" src="https://www.youtube.com/embed/6uNZc2QFpjE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>s
 </body>
 </html>

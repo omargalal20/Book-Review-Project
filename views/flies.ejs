@@ -77,12 +77,17 @@
         At the dawn of the next world war, a plane crashes on an uncharted island, stranding a group of schoolboys. At first, with no adult supervision, their freedom is something to celebrate; this far from civilization the boys can do anything they want. Anything.
     </div>
     <div class="readlist">
+        <form method="Post" action="/addtoreadlist">
+            <div style="visibility: hidden;">
+            <input type="text" name="title" value="Lord of the Flies">
+            <input type="text" name="file" value="flies">
+            </div>
         <button id="readlist" class="btn btn-secondary ml-3">Add to Want to Read List</button>
+        <p style="color: white"><%=error%></p>
+        </form>
     </div>
     <div class="video">
-        <video width="480" height="360" controls>
-            <source src="/flies.mp4">
-        </video>
+        <iframe width="480" height="360" src="https://www.youtube.com/embed/GPxguAyViJk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </body>
 </html>

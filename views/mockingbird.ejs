@@ -77,12 +77,17 @@
             The unforgettable novel of a childhood in a sleepy Southern town and the crisis of conscience that rocked it, To Kill A Mockingbird became both an instant bestseller and a critical success when it was first published in 1960. It went on to win the Pulitzer Prize in 1961 and was later made into an Academy Award-winning film, also a classic.
     </div>
     <div class="readlist">
+        <form method="Post" action="/addtoreadlist" name="ejs">
+            <div style="visibility: hidden;">
+                <input type="text" name="title" value="To Kill a Mockingbird">
+                <input type="text" name="file" value="mockingbird">
+                </div>
         <button id="readlist" class="btn btn-secondary ml-3">Add to Want to Read List</button>
+        <p style="color: white"><%=error%></p>
+        </form>
     </div>
     <div class="video">
-        <video width="480" height="360" controls>
-            <source src="/mockingbird.mp4">
-        </video>
+        <iframe width="480" height="360" src="https://www.youtube.com/embed/KR7loA_oziY?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
     </div>
 </body>
 </html>

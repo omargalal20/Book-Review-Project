@@ -78,12 +78,17 @@
         A poetry collection by American poet Walt Whitman (1819–1892), each poem of which is loosely connected and represents the celebration of his philosophy of life and humanity.
     </div>
     <div class="readlist">
+        <form method="Post" action="/addtoreadlist">
+            <div style="visibility: hidden;">
+                <input type="text" name="title" value="Leaves of Grass">
+                <input type="text" name="file" value="leaves">
+                </div>
         <button id="readlist" class="btn btn-secondary ml-3">Add to Want to Read List</button>
+        <p style="color: white"><%=error%></p>
+        </form>
     </div>
     <div class="video">
-        <video width="480" height="360" controls>
-            <source src="/leaves.mp4">
-        </video>
+        <iframe width="480" height="360" src="https://www.youtube.com/embed/huvuEe1fsOc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
 </body>
