@@ -171,14 +171,14 @@ app.post('/search', function(req, res){
    if(searchbooks.length==0){
      return res.render("searchresults",{error: "Book not found",books: searchbooks});
    }
-   
+
    return res.render("searchresults", {books: searchbooks})
 })
 
 
 
 
-app.listen(3000); //listens to all the requests to the local server
+app.listen(process.env.PORT || 3000); //listens to all the requests to the local server
 
 
 
