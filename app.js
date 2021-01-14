@@ -172,7 +172,7 @@ app.post('/search', function(req, res){
      return res.render("searchresults",{error: "Book not found",books: searchbooks});
    }
 
-   return res.render("searchresults", {books: searchbooks})
+   return res.render("searchresults", {error: "", books: searchbooks})
 })
 
 
